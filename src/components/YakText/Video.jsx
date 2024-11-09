@@ -1,5 +1,5 @@
 import React from 'react';
-import Video from '../../assets/Bodios_FW24_Main_1.mp4'
+import Video from '../../assets/bodios.mp4'
 
 function VideoPlayer() {
   return (
