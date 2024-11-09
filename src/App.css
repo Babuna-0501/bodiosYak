@@ -1,0 +1,14 @@
+
+.App {
+  background-color: #EDEBE8;
+  font-family: 'Githera Regular', sans-serif;
+}
+
+
+@font-face {
+  font-family: 'Githera Regular';
+  src: url('./fonts/githera.otf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
