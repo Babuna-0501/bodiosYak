@@ -1,0 +1,18 @@
+/* Animation definition */
+@keyframes smoothMove {
+    0% {
+      transform: translateY(-100%); /* Start from above */
+    }
+    50% {
+      transform: translateY(0); /* Move to original position */
+    }
+    100% {
+      transform: translateY(100%); /* Move to below */
+    }
+  }
+  
+  /* Applying the animation to the image */
+  .animate-smooth-move {
+    animation: smoothMove 6s ease-in-out infinite; /* 6s for slow animation, ease-in-out for smooth transition */
+  }
+  
