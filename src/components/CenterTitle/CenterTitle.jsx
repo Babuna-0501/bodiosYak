@@ -9,11 +9,11 @@ function CenterTitle() {
   ];
 
   return (
-    <header className="flex flex-col items-center text-center text-black uppercase mt-[67px]">
+    <header className="flex flex-col items-center text-center text-black uppercase mt-[67px] bg-white">
       {textBlocks.map((block, index) => (
         <TextBlock key={index} text={block.text} className={block.className} />
       ))}
-      <section className="image-container">
+      <section className="image-container mt-[80px]">
         <img
           src="https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/6df5c2e921975cf53202a065bfd807a53d3af281253386a3915dec1fc6d70fd9?apiKey=9804d3a088fa478e8672485264720a14&"
           alt="Decorative"  

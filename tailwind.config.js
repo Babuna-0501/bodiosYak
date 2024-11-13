@@ -8,6 +8,9 @@ module.exports = {
       fontFamily: {
         cormorant: ['Cormorant-Medium', 'serif'],
       },
+      colors: {
+        customBg: '#EDEBE8',
+      },
     },
   },
   plugins: [],
