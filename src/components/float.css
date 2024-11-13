@@ -1,16 +1,15 @@
 @keyframes float {
-    0% {
-      transform: translateY(-10px);  /* Start slightly above the center */
-    }
-    50% {
-      transform: translateY(10px);   /* Move down a little */
-    }
-    100% {
-      transform: translateY(-10px);  /* Move back up to the starting position */
-    }
+  0% {
+    transform: translateY(-10px);  /* Start slightly above the center */
   }
-  
-  .animation-float {
-    animation: float 3s ease-in-out infinite; /* 3s duration, ease-in-out timing, infinite loop */
+  50% {
+    transform: translateY(10px);   /* Move down a little */
   }
-  
+  100% {
+    transform: translateY(-10px);  /* Move back up to the starting position */
+  }
+}
+
+.animation-float {
+  animation: float 3s ease-in-out infinite; /* 3s duration, ease-in-out timing, infinite loop */
+}
