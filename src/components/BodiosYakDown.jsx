@@ -6,7 +6,7 @@ function BodiosYakDown() {
   return (
     <main className="mt-10 w-full text-center uppercase text-[330px] text-stone-800 max-md:mt-10 max-md:max-w-full max-md:text-4xl">
       <div className="relative">
-        <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-[330px]">
+        <h1 class="text-5xl sm:text-6xl md:text-7xl lg:text-[330px] text-[#4A391F]">
           bodios
           <br />
           yak down
