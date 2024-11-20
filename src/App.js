@@ -10,6 +10,8 @@ import MongolBg from './components/MongolBg.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import DetailBodios from './components/MenuDetail/DetailBodios.jsx';
 import About from './components/About/About.jsx';
+import YakDetail from './components/YaKDetail/YakDetail.jsx';
+import Social from './components/Social/Social.jsx';
 
 
 function App() {
@@ -32,6 +34,8 @@ function App() {
           } />
           <Route path="/bodios" element={<DetailBodios />} />
           <Route path="/about" element={<About />} />
+          <Route path="/yak" element={<YakDetail/>} />
+          <Route path="/social" element={<Social/>} />
         </Routes>
       </div>
     </Router>

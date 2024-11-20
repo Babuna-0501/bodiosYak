@@ -7,6 +7,7 @@ module.exports = {
     extend: {
       fontFamily: {
         cormorant: ['Cormorant-Medium', 'serif'],
+        githera:['Githera', 'serif']
       },
       colors: {
         customBg: '#EDEBE8',

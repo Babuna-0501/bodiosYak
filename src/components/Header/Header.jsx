@@ -26,6 +26,16 @@ const Header = () => {
     setDiscoverOpen(false); // Close the menu after navigating
   };
 
+  const navigateToYakDetail = () => {
+    navigate('/yak'); 
+    setDiscoverOpen(false); // Close the menu after navigating
+  };
+
+  const navigateToSocial = () => {
+    navigate('/social'); 
+    setDiscoverOpen(false); // Close the menu after navigating
+  };
+
   const navigateToHome = () => {
     navigate('/'); 
     setDiscoverOpen(false); // Close the menu after navigating
@@ -42,8 +52,7 @@ const Header = () => {
         
         {/* Left Links */}
         <nav className="flex space-x-6 font-light text-white text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
-          <a
-            href="#"
+          <a href="#"
             className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black"
             onClick={toggleDiscoverMenu} 
           >
@@ -81,10 +90,10 @@ const Header = () => {
         <div className="absolute top-20 left-0 w-full z-20 flex px-7" style={{background:"#EDEBE8"}}>
           {/* Left Side - List Menu */}
           <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-6 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={handleMenuItemClick}>Bodios</a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={handleMenuItemClick}>About us</a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={handleMenuItemClick}>Yak</a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={handleMenuItemClick}>Social Responsibility</a>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToBodios}>Bodios</a>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToAbout}>About us</a>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToYakDetail}>Yak</a>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToSocial}>Social Responsibility</a>
             <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={handleMenuItemClick}>Bodios People</a>
           </nav>
           
@@ -98,16 +107,16 @@ const Header = () => {
                 </div>
 
                 <div className='cursor-pointer' onClick={navigateToAbout}>
-                  <div className="flex-shrink-0 w-[375px] h-[470px] lg:w-[375px] lg:h-[470px] md:w-[300px] md:h-[400px] sm:w-[250px] sm:h-[330px] bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets/TEMP/97e4fc66280e26949402abfb458b653bcf395e42751c18bc0cc6794077e11f4?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1)' }}></div>
+                  <div className="flex-shrink-0 w-[375px] h-[470px] lg:w-[375px] lg:h-[470px] md:w-[300px] md:h-[400px] sm:w-[250px] sm:h-[330px] bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/03c2838850d74ba3e363486605acb44a1fd3c8cf6f839e931ad72c6e6d26fd51?apiKey=9804d3a088fa478e8672485264720a14&)' }}></div>
                   <h3 className='mt-[10px] font-light'>About us</h3>
                 </div>
 
-                <div className='cursor-pointer' onClick={handleMenuItemClick}>
+                <div className='cursor-pointer' onClick={navigateToYakDetail}>
                   <div className="flex-shrink-0 w-[375px] h-[470px] lg:w-[375px] lg:h-[470px] md:w-[300px] md:h-[400px] sm:w-[250px] sm:h-[330px] bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets/TEMP/ef2946374d78dd117795d93c5afb3327d68f39f735697e142363cb5f7772f778?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1)' }}></div>
                   <h3 className='mt-[10px] font-light'>Yak</h3>
                 </div>
 
-                <div className='cursor-pointer' onClick={handleMenuItemClick}>
+                <div className='cursor-pointer' onClick={navigateToSocial}>
                   <div className="flex-shrink-0 w-[375px] h-[470px] lg:w-[375px] lg:h-[470px] md:w-[300px] md:h-[400px] sm:w-[250px] sm:h-[330px] bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets/TEMP/4a18a0c33504f9791d6e77e10ce10d994b8ac54a99c459800b8dc232fd9983fa?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1)' }}></div>
                   <h3 className='mt-[10px] font-light'>Social Responsibility</h3>
                 </div>

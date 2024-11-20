@@ -1,20 +1,20 @@
-import BodiosContent from "./BodiosContent";
+import YakContent from "./YakContent";
 
-function DetailBodios() {
+function YakDetail() {
   return (
     <div className="flex flex-col items-center text-black bg-customBg">
       <h1 className="text-8xl text-center uppercase max-md:text-4xl mt-[140px]">
-        Bodios
+        Yak
       </h1>
       <img 
         loading="lazy" 
-        src="https://cdn.builder.io/api/v1/image/assets/TEMP/cfddcd14c852e5f589160e7a3bfec8069cac6975f34912a72f11667b8527de51?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1" 
+        src="https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/f3b946d0892ec73732cfb57f390e5d283ffc62079f33cc856c7610a7b6c05c31?apiKey=9804d3a088fa478e8672485264720a14&" 
         alt="Bodios brand showcase"
         className="object-contain self-stretch mt-16 w-full aspect-[1.78] max-md:mt-10 max-md:max-w-full" 
       />
-      <BodiosContent />
+      <YakContent />
     </div>
   );
 }
 
-export default DetailBodios;
+export default YakDetail;
