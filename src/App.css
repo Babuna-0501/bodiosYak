@@ -2,6 +2,9 @@
 .App {
   background-color: #FFF ;
   font-family: 'Githera Regular', sans-serif;
+  max-width: 1920px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 

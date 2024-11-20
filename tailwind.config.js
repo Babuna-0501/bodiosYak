@@ -11,6 +11,9 @@ module.exports = {
       colors: {
         customBg: '#EDEBE8',
       },
+      lineHeight: {
+        '24': '24px',
+      },
     },
   },
   plugins: [],
