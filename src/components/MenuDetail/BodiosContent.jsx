@@ -8,9 +8,9 @@ function AboutContent() {
     {
       text: "Our clientele extends from Switzerland and Europe to Asia, Japan, and beyond, reflecting the global allure of our exquisite yak down garments. Native to Mongolia's rugged, high-altitude terrain, the yak produces naturally sumptuous fibers that repel moisture and provide exceptional warmth. Scientific studies confirm that yak down is inherently warmer than Merino wool and cashmere, making it a truly rare and precious textile. Crafted into 100% natural, organic garments, each piece from BODIOS is a unique statement of purity and luxury."
     },
-    {
-      text: "BODIOS processes 130 tons of raw material and produces 120,000 pieces annually across three factories staffed by 127 dedicated employees."
-    }
+    // {
+    //   text: "BODIOS processes 130 tons of raw material and produces 120,000 pieces annually across three factories staffed by 127 dedicated employees."
+    // }
   ];
 
   return (

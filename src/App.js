@@ -12,6 +12,8 @@ import DetailBodios from './components/MenuDetail/DetailBodios.jsx';
 import About from './components/About/About.jsx';
 import YakDetail from './components/YaKDetail/YakDetail.jsx';
 import Social from './components/Social/Social.jsx';
+import ProductsPage from './components/Women/ProductsPage.jsx';
+import { MenCollection } from './components/Men/MenCollection.jsx';
 
 
 function App() {
@@ -29,14 +31,16 @@ function App() {
               <BodiosYakDown />
               <Video />
               <MongolBg />
-              <Footer />
             </>
           } />
           <Route path="/bodios" element={<DetailBodios />} />
           <Route path="/about" element={<About />} />
           <Route path="/yak" element={<YakDetail/>} />
           <Route path="/social" element={<Social/>} />
+          <Route path="/women" element={<ProductsPage/>} />
+          <Route path="/men" element={<MenCollection/>} />
         </Routes>
+        <Footer />
       </div>
     </Router>
   );
