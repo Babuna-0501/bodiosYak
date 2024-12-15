@@ -1,15 +1,28 @@
-@keyframes float {
-  0% {
-    transform: translateY(-10px);  /* Start slightly above the center */
-  }
-  50% {
-    transform: translateY(10px);   /* Move down a little */
-  }
-  100% {
-    transform: translateY(-10px);  /* Move back up to the starting position */
-  }
+.parallax-container {
+  position: absolute;
+  top: 33%;
+  left: 50%;
+  transform: translate(-50%, -33%);
+  will-change: transform;
 }
 
-.animation-float {
-  animation: float 3s ease-in-out infinite; /* 3s duration, ease-in-out timing, infinite loop */
+.parallax-image {
+  object-fit: contain;
+  width: 75%;
+  max-width: 364px;
+  aspect-ratio: 1 / 1;
+  animation: float 3s ease-in-out infinite;
+}
+
+/* Optional Floating Animation */
+@keyframes float {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-10px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

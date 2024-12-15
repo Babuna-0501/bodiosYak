@@ -2,8 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Hero from './components/Hero.jsx';
 import Header from './components/Header/Header.jsx';
-import ImageGallery from './components/Monthly/ImageGallery.jsx';
-import CenterTitle from './components/CenterTitle/CenterTitle.jsx';
+import BodiosLayout from './components/Monthly/BodiosLayout.jsx';
 import BodiosYakDown from './components/BodiosYakDown.jsx';
 import Video from './components/YakText/Video.jsx';
 import MongolBg from './components/MongolBg.jsx';
@@ -14,6 +13,7 @@ import YakDetail from './components/YaKDetail/YakDetail.jsx';
 import Social from './components/Social/Social.jsx';
 import ProductsPage from './components/Women/ProductsPage.jsx';
 import { MenCollection } from './components/Men/MenCollection.jsx';
+import { BrandStory } from './components/Core/BrandStory.jsx';
 
 
 function App() {
@@ -26,11 +26,11 @@ function App() {
           <Route path="/" element={
             <>
               <Hero />
-              <ImageGallery />
-              <CenterTitle />
+              <BodiosLayout />
               <BodiosYakDown />
-              <Video />
-              <MongolBg />
+              {/* <Video /> */}
+              <BrandStory/>
+              {/* <MongolBg /> */}
             </>
           } />
           <Route path="/bodios" element={<DetailBodios />} />
