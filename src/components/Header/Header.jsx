@@ -1,10 +1,12 @@
 /* eslint-disable jsx-a11y/anchor-is-valid */
-import React, { useState } from 'react';
+import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
+import Bag from '../../assets/bag.png'
 
 const Header = () => {
   const [discoverOpen, setDiscoverOpen] = useState(false);
   const [boutiqueOpen, setBoutiqueOpen] = useState(false);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
   const navigate = useNavigate();
 
   const handleDiscoverHover = () => {
@@ -20,6 +22,7 @@ const Header = () => {
   const handleMenuItemClick = () => {
     setDiscoverOpen(false);
     setBoutiqueOpen(false);
+    setMobileMenuOpen(false); // Close the burger menu
   };
 
   const navigateToBodios = () => {
@@ -57,8 +60,34 @@ const Header = () => {
     handleMenuItemClick();
   };
 
+  // Disable scrolling when mobile menu is open
+  useEffect(() => {
+    if (mobileMenuOpen) {
+      // Disable scrolling on both axes and fix position
+      document.body.style.overflow = 'hidden'; // Disable scrolling
+      document.documentElement.style.overflow = 'hidden'; // Prevent scroll on root element
+      document.body.style.position = 'fixed'; // Fix body position
+      document.body.style.width = '100%'; // Prevent horizontal scroll (if content width exceeds viewport)
+    } else {
+      // Re-enable scrolling when the menu is closed
+      document.body.style.overflow = ''; // Re-enable scrolling
+      document.documentElement.style.overflow = ''; // Reset overflow on root
+      document.body.style.position = ''; // Reset position to allow scrolling again
+      document.body.style.width = ''; // Reset width to allow scrolling
+    }
+
+    return () => {
+      // Cleanup: Reset overflow styles when component unmounts or menu closes
+      document.body.style.overflow = '';
+      document.documentElement.style.overflow = '';
+      document.body.style.position = '';
+      document.body.style.width = '';
+    };
+  }, [mobileMenuOpen]);
+
   return (
-    <header className="w-full h-20 bg-black bg-opacity-10 fixed max-w-[1920px] mx-auto transition-colors hover:bg-[#EDEBE8] group">
+    <header className="w-full bg-black bg-opacity-10 fixed max-w-[1920px] mx-auto transition-colors hover:bg-[#EDEBE8] group lg:h-[80px] sm:h-[52px] z-20">
+
       {/* Desktop Header */}
       <div className="hidden md:flex justify-between items-center w-full max-w-[1800px] mx-auto h-full">
         {/* Left Links */}
@@ -110,6 +139,83 @@ const Header = () => {
           </a>
         </div>
       </div>
+
+    {/* Mobile Burger Menu */}
+    <div className="md:hidden flex items-center px-4 py-2 w-[100vw] justify-between">
+      <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-white">
+        {/* Burger Icon when menu is closed */}
+        {!mobileMenuOpen ? (
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        ) : (
+          // X Icon when menu is opened
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            className="w-6 h-6"
+          >
+            <path
+              strokeLinecap="round"
+              strokeLinejoin="round"
+              strokeWidth="2"
+              d="M6 18L18 6M6 6l12 12"
+            />
+          </svg>
+        )}
+      </button>
+
+      {/* Title with conditional color */}
+      <h1 className={`text-center ${mobileMenuOpen ? 'text-black' : 'text-white'}`}>BODIOS YAK DOWN</h1>
+
+      <img src={Bag} />
+    </div>
+
+{/* Mobile Menu Content */}
+{mobileMenuOpen && (
+  <div className="md:hidden bg-[#EDEBE8] absolute top-10 left-0 w-full z-20 h-[100vh]">
+    <nav className="flex flex-col items-start space-y-4 text-black p-6 text-[18px]">
+      <a href="/" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToHome(); handleMenuItemClick(); }}>
+        Home
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToBodios(); handleMenuItemClick(); }}>
+        Bodios
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToAbout(); handleMenuItemClick(); }}>
+        About us
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToYakDetail(); handleMenuItemClick(); }}>
+        Yak
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToSocial(); handleMenuItemClick(); }}>
+        Social Responsibility
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { handleMenuItemClick(); }}>
+        Bodios People
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToProductWomen(); handleMenuItemClick(); }}>
+        Women
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToProductMen(); handleMenuItemClick(); }}>
+        Men
+      </a>
+    </nav>
+  </div>
+)}
+
 
       {/* Discover Menu (Visible on hover) */}
       {discoverOpen && (

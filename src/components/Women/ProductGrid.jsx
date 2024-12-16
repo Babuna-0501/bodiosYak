@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import ProductCard from "./ProductCard";
 
 const products = [
@@ -12,17 +12,18 @@ const products = [
 
 export default function ProductGrid() {
   return (
-    <section className="w-full max-w-[1670px] mx-auto flex flex-wrap gap-6 items-center mt-7 whitespace-nowrap">
-    <nav className="flex flex-wrap gap-5 justify-between w-full tracking-normal leading-none text-center text-black mt-44 max-md:mt-10 max-md:flex-col max-md:gap-4 max-md:text-left">
-    <div className="flex gap-10 items-center max-md:flex-col max-md:gap-2 max-md:w-full">
-        <button tabIndex="0" className="self-stretch my-auto">filter:</button>
-        <button tabIndex="0" className="self-stretch my-auto">product type</button>
-        <button tabIndex="0" className="self-stretch my-auto">Size</button>
-        <button tabIndex="0" className="self-stretch my-auto">Colour</button>
-    </div>
-    <p className="max-md:text-left max-md:w-full">12 products</p>
-    </nav>
-      <div className="flex flex-wrap gap-6 justify-center w-full">
+    <section className="w-full max-w-[1670px] mx-auto flex flex-col gap-12 items-center mt-7">
+      {/* Filter Navigation */}
+      {/* Filter Navigation */}
+      <nav className="flex flex-wrap gap-10 items-center justify-center tracking-normal leading-none text-center text-black max-md:mt-10">
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Filter:</button>
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Product Type</button>
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Size</button>
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Colour</button>
+      </nav>
+
+      {/* Product Cards */}
+      <div className="flex flex-wrap gap-6 justify-center w-full max-md:px-4">
         {products.map(product => (
           <ProductCard
             key={product.id}

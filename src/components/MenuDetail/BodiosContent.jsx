@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 
 function AboutContent() {
   const paragraphs = [
@@ -14,7 +14,7 @@ function AboutContent() {
   ];
 
   return (
-    <article className="pt-0 text-lg leading-6 text-justify text-black max-md:max-w-[1920px] w-[1027px] mt-[84px]">
+    <article className="pt-0 text-lg leading-6 text-justify text-black max-md:max-w-[1920px] w-full mt-[84px] pl-2 pr-2 text-sm">
       {paragraphs.map((paragraph, index) => (
         <React.Fragment key={index}>
           <p>{paragraph.text}</p>

@@ -1,4 +1,4 @@
-import * as React from "react";
+import React from "react";
 import { ProductCard } from "./ProductCardMen";
 
 const products = [
@@ -12,20 +12,18 @@ const products = [
 
 export function ProductsSection() {
   return (
-    <section className="w-full max-w-[1670px] mx-auto flex flex-wrap gap-6 items-center mt-7 whitespace-nowrap">
-      <nav className="flex gap-10 items-center self-start mt-48 tracking-normal leading-none text-center text-black max-md:mt-10">
-        <button className="self-stretch my-auto" tabIndex="0">filter:</button>
-        <button className="self-stretch my-auto" tabIndex="0">prodict type</button>
-        <button className="self-stretch my-auto" tabIndex="0">Size</button>
-        <button className="self-stretch my-auto" tabIndex="0">Colour</button>
+    <section className="w-full max-w-[1670px] mx-auto flex flex-col gap-12 items-center mt-7">
+      {/* Filter Navigation */}
+      <nav className="flex flex-wrap gap-10 items-center justify-center tracking-normal leading-none text-center text-black max-md:mt-10">
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Filter:</button>
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Product Type</button>
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Size</button>
+        <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Colour</button>
       </nav>
-      <div className="flex flex-wrap gap-6 justify-center w-full">
-        {products.slice(0, 3).map(product => (
-          <ProductCard key={product.id} {...product} />
-        ))}
-      </div>
-      <div className="flex flex-wrap gap-6 justify-center w-full">
-        {products.slice(3, 6).map(product => (
+
+      {/* Product Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 w-full max-md:px-4">
+        {products.map(product => (
           <ProductCard key={product.id} {...product} />
         ))}
       </div>

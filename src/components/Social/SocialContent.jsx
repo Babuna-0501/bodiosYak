@@ -24,17 +24,17 @@ function SocialContent() {
   ];
 
   return (
-    <article className="pt-0 text-lg leading-6 text-justify text-black max-md:max-w-[1920px] w-[1027px] mt-[84px] border-4  p-4 rounded-lg shadow-md">
+    <article className="pt-0 text-justify text-black w-full sm:w-[1027px] mx-auto mt-[84px] p-4 sm:p-8 border-4 rounded-lg shadow-md">
       {paragraphs.map((paragraph, index) => (
         <React.Fragment key={index}>
           {Array.isArray(paragraph.text) ? (
             paragraph.text.map((item, itemIndex) => (
-              <div key={itemIndex} className="my-2">
+              <div key={itemIndex} className="my-2 text-base sm:text-lg">
                 ● {item}
               </div>
             ))
           ) : (
-            <p className="my-2">{paragraph.text}</p>
+            <p className="my-2 text-base sm:text-lg">{paragraph.text}</p>
           )}
         </React.Fragment>
       ))}
