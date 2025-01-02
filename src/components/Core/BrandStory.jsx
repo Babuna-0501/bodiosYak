@@ -6,8 +6,8 @@ import { ImageGallery } from "./ImageGallery";
 export function BrandStory() {
   return (
     <div className="flex flex-col bg-customBg py-[109px]">
-      <BrandDescription />
-      <VideoSection />
+      {/* <BrandDescription />
+      <VideoSection /> */}
       <ImageGallery />
     </div>
   );

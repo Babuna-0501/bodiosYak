@@ -100,7 +100,7 @@ function BodiosLayout() {
           ))}
         </div>
       ) : (
-        <div className="flex mt-2 max-md:flex-col">
+        <div className="flex max-md:flex-col">
           {desktopCards.map((card, index) => (
             <ImageCard
               key={index}

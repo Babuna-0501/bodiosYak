@@ -21,11 +21,11 @@ export function ImageGallery() {
   const desktopImages = [
     { src: Core2, styles: "w-[342px] h-[527px] left-0 top-[110px]" },
     { src: Core1, styles: "w-[577px] h-[392px] left-[136px] top-[452px]" },
-    { src: Core3, styles: "w-[428px] h-[299px] left-[436px] top-[3px]" },
+    { src: Core3, styles: "w-[428px] h-[299px] left-[436px] top-[73px]" },
     { src: Core4, styles: "w-[436px] h-[602px] left-[1142px] top-0" },
-    { src: Core6, styles: "w-[540px] h-[190px] left-[1474px] top-[210px]" },
-    { src: Core5, styles: "w-[344px] h-[426px] left-[943px] top-[305px]" },
-    { src: Core7, styles: "w-[330px] h-[322px] left-[1510px] top-[522px]" },
+    { src: Core6, styles: "w-[540px] h-[190px] left-[1474px] top-[210px] object-contain" },
+    { src: Core5, styles: "w-[344px] h-[426px] left-[943px] top-[805px]" },
+    { src: Core7, styles: "w-[330px] h-[322px] left-[1510px] top-[805px]" },
   ];
 
   const mobileImages = [
@@ -37,30 +37,50 @@ export function ImageGallery() {
     { src: Core6_sm, styles: "w-[171px] object-cover h-[225px] left-[29px] top-[523px]" },
     { src: Core7_sm, styles: "w-[150px] object-cover h-[170px] left-[262px] top-[618px]" },
   ];
- 
+
   return (
     <div>
       {/* Desktop View */}
       <div
-        className="relative hidden lg:block mt-[109px]"
-        style={{ width: 2014, height: 844 }}
+        className="relative hidden lg:block mt-[50px] overflow-hidden"
+        style={{ width: 2014, height: 1244 }}
       >
+        {/* Title for Desktop */}
+        <div className="absolute inset-0 flex items-center justify-center text-center text-black text-[84px] z-10">
+          <div>
+            GIFTED BY NATURE, <br /> CREATED BY BODIOS
+          </div>
+        </div>
+
         {desktopImages.map((image, index) => (
           <img
             key={index}
             src={image.src}
-            className={`absolute ${image.styles}`}
+            className={`absolute ${image.styles} animate-slide`}
+            style={{
+              animationDelay: `-${index * 0.5}s`,
+            }}
           />
         ))}
       </div>
 
       {/* Mobile View */}
-      <div className="relative block lg:hidden w-[538px] h-[788px]">
+      <div className="relative block lg:hidden w-[538px] h-[788px] overflow-hidden">
+        {/* Title for Mobile */}
+        <div className="absolute inset-0 flex items-center justify-center text-center text-black text-[43px] z-10">
+          <div>
+            GIFTED BY NATURE, <br /> CREATED BY BODIOS
+          </div>
+        </div>
+
         {mobileImages.map((image, index) => (
           <img
             key={index}
             src={image.src}
-            className={`absolute ${image.styles}`}
+            className={`absolute ${image.styles} animate-slide`}
+            style={{
+              animationDelay: `-${index * 0.5}s`,
+            }}
           />
         ))}
       </div>

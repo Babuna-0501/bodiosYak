@@ -28,7 +28,7 @@ function BodiosYakDown() {
           loading="lazy"
         />
       </section>
-      <YakTextWrapper />
+      {/* <YakTextWrapper /> */}
     </main>
   );
 }

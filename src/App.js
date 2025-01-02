@@ -14,6 +14,9 @@ import Social from './components/Social/Social.jsx';
 import ProductsPage from './components/Women/ProductsPage.jsx';
 import { MenCollection } from './components/Men/MenCollection.jsx';
 import { BrandStory } from './components/Core/BrandStory.jsx';
+import { Artisan } from './components/Artisan/Artisan.jsx';
+import Triple from './components/Triple/Triple.jsx';
+
 
 
 function App() {
@@ -26,10 +29,15 @@ function App() {
           <Route path="/" element={
             <>
               <Hero />
-              <BodiosLayout />
               <BodiosYakDown />
+             
+       
               {/* <Video /> */}
+              <BodiosLayout />
+              <Artisan/>
+              <Triple/>
               <BrandStory/>
+             
               {/* <MongolBg /> */}
             </>
           } />
