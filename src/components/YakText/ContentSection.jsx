@@ -2,7 +2,7 @@ import React from 'react';
 
 function ContentSection() {
   return (
-    <section className="self-center mt-14 w-full text-xl font-medium leading-8 max-md:mt-10 max-w-[1000px] font-cormorant font-cormorant lowercase">
+    <section className="self-center mt-14 w-full text-xl font-medium leading-8 max-md:mt-10 max-w-[1000px] font-libreFranklin font-libreFranklin lowercase">
       <p>
         <span className='uppercase'>BODIOS,</span> a distinguished family-owned Mongolian brand with 30 years of heritage, is now proudly led by its second generation. With privileged access to 60% of Mongolia's yak down, we meticulously oversee each step of the process to create an extraordinary softness—an embodiment of luxury at its finest. Seamlessly merging traditional craftsmanship with contemporary design, <span className='uppercase'>BODIOS</span> offers timeless pieces that resonate with refined taste and uncompromising quality.
       </p>

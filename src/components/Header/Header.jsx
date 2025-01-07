@@ -86,10 +86,10 @@ const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="w-full bg-black bg-opacity-10 fixed max-w-[1920px] mx-auto transition-colors hover:bg-[#EDEBE8] group lg:h-[80px] sm:h-[52px] z-20">
+    <header className="w-full bg-black bg-opacity-10 fixed mx-auto transition-colors hover:bg-[#EDEBE8] group lg:h-[80px] sm:h-[52px] z-20">
 
       {/* Desktop Header */}
-      <div className="hidden md:flex justify-between items-center w-full max-w-[1800px] mx-auto h-full">
+      <div className="hidden md:flex justify-between items-center w-full mx-auto h-full">
         {/* Left Links */}
         <nav className="flex space-x-6 font-light text-white text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
           <a
@@ -113,7 +113,7 @@ const Header = () => {
         {/* Center Title */}
         <h1
           onClick={navigateToHome}
-          className="text-white text-xl font-semibold tracking-wide font-thin cursor-pointer group-hover:hidden"
+          className="text-white text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-semibold tracking-wide font-thin cursor-pointer group-hover:hidden"
         >
           BODIOS YAK DOWN
         </h1>
@@ -227,23 +227,44 @@ const Header = () => {
         >
           {/* Left Side - List Menu */}
           <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-6 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToBodios}>
+            <a
+              href="#"
+              className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
+              onClick={navigateToBodios}
+            >
               Bodios
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToAbout}>
+            <a
+              href="#"
+              className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
+              onClick={navigateToAbout}
+            >
               About us
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToYakDetail}>
+            <a
+              href="#"
+              className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
+              onClick={navigateToYakDetail}
+            >
               Yak
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToSocial}>
+            <a
+              href="#"
+              className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
+              onClick={navigateToSocial}
+            >
               Social Responsibility
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={handleMenuItemClick}>
+            <a
+              href="#"
+              className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
+              onClick={handleMenuItemClick}
+            >
               Bodios People
             </a>
           </nav>
-          {/* Right Side - Image Slider */}
+
+
            {/* Right Side - Image Slider */}
            <div className="w-4/5">
             <div className="h-full flex justify-center items-center">
@@ -288,19 +309,20 @@ const Header = () => {
         >
           {/* Left Side - List Menu */}
           <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-6 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToProductWomen}>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToProductWomen}>
               Women
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToProductMen}>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToProductMen}>
               Men
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToYakDetail}>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToYakDetail}>
               Home
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black" onClick={navigateToSocial}>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToSocial}>
               Accessories
             </a>
           </nav>
+
           {/* Right Side - Image Slider */}
              <div className="w-4/5">
             <div className="h-full flex justify-center items-center">

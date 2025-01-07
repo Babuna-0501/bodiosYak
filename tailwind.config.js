@@ -6,8 +6,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        cormorant: ['Cormorant-Medium', 'serif'],
-        githera:['Githera', 'serif']
+        githera: ['Githera', 'serif'],
+        libreFranklin: ['Libre-Franklin-Light', 'sans-serif'], 
       },
       colors: {
         customBg: '#EDEBE8',

@@ -8,7 +8,7 @@ export function ArtisanContent() {
         FROM A KNIT COMMUNITY OF MONGOLIAN <br />
         ARTISANS TO YOU
       </div>
-      <div className="mt-14 leading-8 text-justify max-md:mt-10 max-md:max-w-full">
+      <div className="mt-14 leading-8 text-justify max-md:mt-10 max-md:max-w-full font-libreFranklin">
         BODIOS, a distinguished family-owned Mongolian brand with 30 years
         of heritage, is now proudly led by its second generation. With
         privileged access to 60% of Mongolia's yak down, we meticulously

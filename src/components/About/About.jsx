@@ -26,7 +26,7 @@ function About() {
 
     {/* Founder */}
     <h2 className="text-black text-2xl sm:text-5xl font-normal mt-16">Our founder</h2>
-    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-4 font-cormorant font-light">
+    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-4 font-libreFranklin font-light">
       Inspired by the extraordinary qualities of yak down—its inherent warmth, luxury, and softness—J. Ulziibodijav
       founded BODIOS to bring this unique material to life. With a passion for innovation, he devoted himself to
       refining yak down’s natural properties, crafting designs that honor both quality and nature’s elegance. By
@@ -37,7 +37,7 @@ function About() {
 
     {/* Philosophy */}
     <h2 className="text-black text-2xl sm:text-5xl font-normal mt-16">Philosophy</h2>
-    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-4 font-cormorant font-light">
+    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-4 font-libreFranklin font-light">
       BODIOS crafts products from yak down, offering exceptional warmth, comfort, and environmental sustainability.
       Committed to ethical business principles that support herders, we strive to bring people closer to nature.
     </p>
@@ -47,17 +47,17 @@ function About() {
     <h3 className="text-black text-lg sm:text-2xl font-normal leading-[30px] tracking-tight mt-4">
       SUSTAINABILITY-FOCUSED
     </h3>
-    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-2 font-cormorant font-light">
+    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-2 font-libreFranklin font-light">
       BODIOS is dedicated to being a positive and supportive force for all stakeholders and the environment.
     </p>
 
     <h3 className="text-black text-lg sm:text-2xl font-normal leading-[30px] tracking-tight mt-8">Rare</h3>
-    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-2 font-cormorant font-light">
+    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-2 font-libreFranklin font-light">
       Yak down is regarded as a rare raw material, not just in Mongolia, but across the globe.
     </p>
 
     <h3 className="text-black text-lg sm:text-2xl font-normal leading-[30px] tracking-tight mt-8">Functional</h3>
-    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-2 font-cormorant font-light">
+    <p className="text-black text-base sm:text-lg font-normal leading-normal mt-2 font-libreFranklin font-light">
       BODIOS offers a warm, low-maintenance material characterized by its timeless design.
     </p>
   </div>
