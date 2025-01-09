@@ -1,4 +1,3 @@
-/* eslint-disable jsx-a11y/alt-text */
 import * as React from "react";
 import Core1 from "../../assets/core1.png";
 import Core2 from "../../assets/core2.png";
@@ -43,12 +42,12 @@ export function ImageGallery() {
       {/* Desktop View */}
       <div
         className="relative hidden md:block mt-[50px] overflow-hidden"
-        style={{ width: 2014, height: 1244 }}
+        style={{ height: 1244 }}
       >
         {/* Title for Desktop */}
-        {/* <div className="inset-0 absolute z-10 flex text-black text-[6vw] lg:text-[84px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 text-center">
-            GIFTED BY NATURE, <br /> CREATED BY BODIOS
-        </div> */}
+        <div className="absolute inset-0 z-10 flex items-center justify-center text-center text-black text-[6vw] lg:text-[84px] sm:text-[50px] md:text-[65px]">
+          GIFTED BY NATURE, <br /> CREATED BY BODIOS
+        </div>
 
         {desktopImages.map((image, index) => (
           <img
@@ -65,9 +64,9 @@ export function ImageGallery() {
       {/* Mobile View */}
       <div className="relative block md:hidden w-[538px] h-[788px] overflow-hidden">
         {/* Title for Mobile */}
-        {/* <div className="inset-0 absolute flex items-center justify-center text-center text-black text-[8vw] sm:text-[43px] top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
-            GIFTED BY NATURE, <br /> CREATED BY BODIOS
-        </div> */}
+        <div className="absolute inset-0 flex items-center justify-center text-center text-black text-[8vw] sm:text-[43px]">
+          GIFTED BY NATURE, <br /> CREATED BY BODIOS
+        </div>
 
         {mobileImages.map((image, index) => (
           <img

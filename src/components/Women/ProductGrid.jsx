@@ -12,10 +12,10 @@ const products = [
 
 export default function ProductGrid() {
   return (
-    <section className="w-full max-w-[1670px] mx-auto flex flex-col gap-12 items-center mt-7">
+    <section className="w-full max-w-[1670px] mx-auto flex flex-col gap-12 items-center mt-7 font-libreFranklin font-light">
       {/* Filter Navigation */}
       {/* Filter Navigation */}
-      <nav className="flex flex-wrap gap-10 items-center justify-center tracking-normal leading-none text-center text-black max-md:mt-10">
+      <nav className="flex flex-wrap gap-10 items-center justify-center tracking-normal leading-none text-center  max-md:mt-10">
         <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Filter:</button>
         <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Product Type</button>
         <button className="capitalize px-4 py-2 border rounded-md hover:bg-gray-200" tabIndex="0">Size</button>

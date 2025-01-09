@@ -85,7 +85,7 @@ function BodiosLayout() {
   const isSmartphone = useMediaQuery("(max-width: 768px)");
 
   return (
-    <div>
+    <div className="mt-3">
       {isSmartphone ? (
         <div className="flex text-2xl text-white uppercase whitespace-nowrap">
           {smartphoneImages.map((image, index) => (

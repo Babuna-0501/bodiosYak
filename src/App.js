@@ -29,13 +29,14 @@ function App() {
           <Route path="/" element={
             <>
               <Hero />
+              <BodiosLayout />
               <BodiosYakDown />
              
        
               {/* <Video /> */}
-              <BodiosLayout />
+             
               <Artisan/>
-              <Triple/>
+              {/* <Triple/> */}
               <BrandStory/>
              
               {/* <MongolBg /> */}

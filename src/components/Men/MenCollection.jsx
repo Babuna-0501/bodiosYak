@@ -16,7 +16,7 @@ export function MenCollection() {
       />
 
       {/* Description Section */}
-      <section className="self-center leading-[24px] mt-11 text-center max-md:mt-10 w-[1027px] max-md:max-w-[90%]">
+      <section className="self-center leading-[24px] mt-11 text-center max-md:mt-10 w-[1027px] max-md:max-w-[90%] font-libreFranklin font-light">
         <p>
           BODIOS, a distinguished family-owned Mongolian brand with a heritage
           spanning 30 years, is now proudly led by its second generation. With

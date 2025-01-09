@@ -14,7 +14,7 @@ function AboutContent() {
   ];
 
   return (
-    <article className="pt-0 text-lg leading-6 text-justify text-black max-md:max-w-[1920px] w-full mt-[84px] pl-2 pr-2 text-sm">
+    <article className="font-libreFranklin font-light pt-0 text-lg leading-6 text-justify my-[84px] pl-2 pr-2 text-sm flex justify-center max-w-[1273px] sm:max-w-[600px] md:max-w-[900px] lg:max-w-[1273px] leading-[32px]">
       {paragraphs.map((paragraph, index) => (
         <React.Fragment key={index}>
           <p>{paragraph.text}</p>

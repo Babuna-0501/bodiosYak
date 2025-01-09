@@ -24,7 +24,7 @@ function SocialContent() {
   ];
 
   return (
-    <article className="pt-0 text-justify text-black w-full sm:w-[1027px] mx-auto mt-[84px] p-4 sm:p-8 border-4 rounded-lg shadow-md">
+    <article className="pt-0 text-justify text-black w-full sm:w-[1027px] mx-auto mt-[84px] p-4 sm:p-8 border-4 rounded-lg shadow-md font-libreFranklin font-light mb-8">
       {paragraphs.map((paragraph, index) => (
         <React.Fragment key={index}>
           {Array.isArray(paragraph.text) ? (

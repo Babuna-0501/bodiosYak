@@ -23,12 +23,14 @@ function YakContent() {
   ];
 
   return (
-    <article className="pt-0 text-justify text-black w-full sm:w-[1027px] mx-auto mt-[84px] px-4 sm:px-0">
+    <article className="font-libreFranklin font-light pt-0 text-lg leading-6 text-justify my-[84px] pl-2 pr-2 text-sm flex flex-col justify-center max-w-[1273px] sm:max-w-[600px] md:max-w-[900px] lg:max-w-[1273px] leading-[32px]">
       {paragraphs.map((paragraph, index) => (
-        <React.Fragment key={index}>
-          <p className="text-base sm:text-lg leading-6 sm:leading-8">{paragraph.text}</p>
-          <br />
-        </React.Fragment>
+        <p
+          key={index}
+          className="text-base sm:text-lg leading-6 sm:leading-8 mb-6" // Add margin-bottom for spacing
+        >
+          {paragraph.text}
+        </p>
       ))}
     </article>
   );

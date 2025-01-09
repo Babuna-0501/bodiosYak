@@ -10,7 +10,7 @@ export default function ProductsPage() {
       </div>
 
       {/* Description Section */}
-      <section className="self-center leading-[24px] mt-11 text-center max-md:mt-10 w-[1027px] max-md:w-full max-md:px-4">
+      <section className="self-center leading-[24px] mt-11 text-center max-md:mt-10 w-[1027px] max-md:w-full max-md:px-4 font-libreFranklin font-light">
         BODIOS, a distinguished family-owned Mongolian brand with a heritage
         spanning 30 years, is now proudly led by its second generation. With
         privileged access to 60% of Mongolia's yak down, we meticulously oversee
