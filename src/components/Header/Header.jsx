@@ -86,7 +86,7 @@ const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="w-full bg-black bg-opacity-10 fixed mx-auto transition-colors hover:bg-[#EDEBE8] group lg:h-[80px] sm:h-[52px] z-20">
+    <header className="w-full bg-black bg-opacity-10 fixed mx-auto transition-colors hover:bg-[#EDEBE8] group xl:h-[80px] sm:h-[52px] z-20">
 
       {/* Desktop Header */}
       <div className="hidden md:flex justify-between items-center w-full mx-auto h-full">
@@ -113,7 +113,7 @@ const Header = () => {
         {/* Center Title */}
         <h1
           onClick={navigateToHome}
-          className="text-white text-[16px] sm:text-[20px] md:text-[24px] lg:text-[28px] font-semibold tracking-wide font-thin cursor-pointer group-hover:hidden"
+          className="text-white text-[16px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold tracking-wide font-thin cursor-pointer group-hover:hidden"
         >
           BODIOS YAK DOWN
         </h1>

@@ -1,63 +1,80 @@
 import * as React from "react";
-import { FooterLinkSection } from "./FooterLinkSection";
-import { SocialIcon } from "./SocialIcon";
-import { socialIcons, footerLinks } from "./FooterData";
+import FooterLinks from "./FooterLinks";
+import SocialIcon from "./SocialIcon";
 
-export function Footer() {
+const Footer = () => {
+  const customerLinks = [
+    { text: "freguently asked questions", href: "#" },
+    { text: "shipping & returns", href: "#" },
+    { text: "cashmere care", href: "#" },
+    { text: "sustainability", href: "#" },
+    { text: "gift cards", href: "#" }
+  ];
+
   return (
-    <div className="flex flex-col">
-      <div className="flex overflow-hidden flex-col justify-center py-px w-full bg-white shadow-sm max-md:max-w-full">
-        <div className="flex relative flex-col items-center px-20 pt-16 pb-10 min-h-[518px] max-md:px-5 max-md:max-w-full">
+    <footer className="flex flex-col font-libreFranklin">
+      <div className="flex overflow-hidden flex-col w-full bg-white shadow-sm max-md:max-w-full">
+        <div className="flex relative flex-col items-center px-20 pt-24 pb-10 min-h-[445px] max-md:px-5 max-md:max-w-full">
           <img
             loading="lazy"
-            src="https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/838ba21261cc74cefe06d100c55239c1598a1c3b81a9e1b510820e9b9da72d30?apiKey=9804d3a088fa478e8672485264720a14&"
-            alt="Footer background"
+            src="https://cdn.builder.io/api/v1/image/assets/TEMP/fc31e98e95d4573011f945b0fd2c7d98d385b85797c209b1f47333fe30fcff01?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1"
+            alt=""
             className="object-cover absolute inset-0 size-full"
           />
           <div className="flex relative flex-col w-full max-w-[1444px] max-md:max-w-full">
-            <div className="flex flex-wrap gap-5 justify-between w-full max-md:max-w-full">
-              <div className="flex flex-col text-lg">
-                <div className="flex flex-col tracking-normal leading-none text-center text-black">
-                  <div className="self-start">Join the Bodios Yak Down circle</div>
-                  <div className="flex w-full min-h-0" />
+            <div className="max-md:max-w-full">
+              <div className="flex gap-5 max-md:flex-col">
+                <div className="flex flex-col w-[21%] max-md:ml-0 max-md:w-full">
+                  <nav className="flex flex-col grow text-black max-md:mt-10">
+                    <div className="flex flex-col w-full text-lg tracking-normal leading-none text-center">
+                      <h2 className="self-start font-githera xl:text-[18px]">Contact us</h2>
+                      <div className="flex w-full min-h-0" />
+                    </div>
+                    <FooterLinks links={customerLinks} className="text-xl font-libreFranklin" />
+                  </nav>
                 </div>
-                <form className="flex gap-5 items-end mt-4 font-light leading-none text-neutral-600">
-                  <div className="flex gap-5 items-center border-b border-solid border-b-black min-h-[31px] min-w-[240px] w-[372px]">
-                    <label htmlFor="emailInput" className="sr-only">Enter your email</label>
-                    <input
-                      type="email"
-                      id="emailInput"
-                      placeholder="enter your email"
-                      className="flex-1 shrink self-stretch my-auto basis-0 bg-transparent border-none outline-none"
-                      aria-label="Enter your email"
-                    />
-                    <button type="submit" aria-label="Submit email">
-                      <img
-                        loading="lazy"
-                        src="https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/87da361f8fbe0b85864632554322d1046f3c513169d1ae8f48361ed445993127?apiKey=9804d3a088fa478e8672485264720a14&"
-                        alt=""
-                        className="object-contain shrink-0 self-stretch my-auto w-6 aspect-square"
-                      />
-                    </button>
+                <div className="flex flex-col ml-5 w-[79%] max-md:ml-0 max-md:w-full">
+                  <div className="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
+                    <div className="flex flex-wrap gap-5 justify-between text-lg tracking-normal leading-none text-center text-black max-md:max-w-full">
+                      <div className="flex flex-col">
+                        <h2 className="self-start">Follow us</h2>
+                        <div className="flex w-full min-h-0" />
+                      </div>
+                      <div className="flex flex-col max-md:max-w-full">
+                        <h2 className="self-start font-githera xl:text-[18px]">Join the Bodios Yak Down circle</h2>
+                        <div className="flex w-full min-h-0 max-md:max-w-full" />
+                        <form className="flex gap-5 items-end self-end text-lg font-light leading-none text-neutral-600 relative top-5">
+                          <div className="flex flex-1 shrink gap-5 items-center w-full border-b border-solid basis-0 border-b-black min-h-[31px] min-w-[240px] max-md:max-w-full">
+                            <label htmlFor="emailInput" className="sr-only">Enter your email</label>
+                            <input
+                              type="email"
+                              id="emailInput"
+                              placeholder="enter your email"
+                              className="flex-1 shrink self-stretch my-auto basis-0 bg-transparent border-none outline-none"
+                              aria-label="Enter your email"
+                            />
+                            <button
+                              type="submit"
+                              aria-label="Submit email"
+                              className="flex shrink-0 self-stretch my-auto w-6 h-6"
+                            />
+                          </div>
+                        </form>
+                      </div>
+                    </div>
+                    <div className="flex gap-3.5 justify-center items-center self-start rounded-full">
+                      <SocialIcon icon="https://cdn.builder.io/api/v1/image/assets/TEMP/8366995aa38a2834770af5d3d6d1b4be2524ed09f51a24d7ec74b4e69381862e?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1" alt="Social media icon" />
+                    </div>
+           
                   </div>
-                </form>
+                </div>
               </div>
-              <div className="flex gap-3.5 justify-center items-center my-auto rounded-full">
-                {socialIcons.map((icon, index) => (
-                  <SocialIcon key={index} {...icon} />
-                ))}
-              </div>
-            </div>
-            <div className="flex flex-wrap gap-2.5 items-start self-start mt-16 text-black max-md:mt-10">
-              {footerLinks.map((section, index) => (
-                <FooterLinkSection key={index} {...section} />
-              ))}
             </div>
             <img
               loading="lazy"
-              src="https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/6e4e1283aca84e74d37a55f83dd3552e1e956bee70df4735c6f67d8cbdfef62f?apiKey=9804d3a088fa478e8672485264720a14&"
+              src="https://cdn.builder.io/api/v1/image/assets/TEMP/5782d9c22aab72fe88a99ffc1ca0f55fc632c0844dc551be3d83dc18f1c89e22?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1"
               alt=""
-              className="object-contain mt-12 w-full aspect-[1000] stroke-[1px] stroke-zinc-900 max-md:mt-10 max-md:max-w-full"
+              className="object-contain mt-16 w-full aspect-[100] stroke-[1px] stroke-zinc-500 max-md:mt-10 max-md:max-w-full"
             />
             <div className="self-center mt-9 text-sm font-light tracking-normal leading-none text-right text-neutral-600">
               © Bodios Yak Down 2024
@@ -65,8 +82,8 @@ export function Footer() {
           </div>
         </div>
       </div>
-    </div>
+    </footer>
   );
-}
+};
 
 export default Footer;

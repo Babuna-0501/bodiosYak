@@ -16,6 +16,8 @@ import { MenCollection } from './components/Men/MenCollection.jsx';
 import { BrandStory } from './components/Core/BrandStory.jsx';
 import { Artisan } from './components/Artisan/Artisan.jsx';
 import Triple from './components/Triple/Triple.jsx';
+import { BrandDescription } from './components/BrandDescription/BrandDescription.jsx';
+import BoutiqueHeader from './components/BoutiqueHeader/BoutiqueHeader.jsx';
 
 
 
@@ -29,16 +31,14 @@ function App() {
           <Route path="/" element={
             <>
               <Hero />
-              <BodiosLayout />
+              <BoutiqueHeader/>
               <BodiosYakDown />
-             
-       
+              <BrandDescription/>
+              <BodiosLayout />
               {/* <Video /> */}
-             
               <Artisan/>
               {/* <Triple/> */}
               <BrandStory/>
-             
               {/* <MongolBg /> */}
             </>
           } />
