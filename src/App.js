@@ -4,8 +4,8 @@ import Hero from './components/Hero.jsx';
 import Header from './components/Header/Header.jsx';
 import BodiosLayout from './components/Monthly/BodiosLayout.jsx';
 import BodiosYakDown from './components/BodiosYakDown.jsx';
-import Video from './components/YakText/Video.jsx';
-import MongolBg from './components/MongolBg.jsx';
+// import Video from './components/YakText/Video.jsx';
+// import MongolBg from './components/MongolBg.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import DetailBodios from './components/MenuDetail/DetailBodios.jsx';
 import About from './components/About/About.jsx';
@@ -18,6 +18,7 @@ import { Artisan } from './components/Artisan/Artisan.jsx';
 import Triple from './components/Triple/Triple.jsx';
 import { BrandDescription } from './components/BrandDescription/BrandDescription.jsx';
 import BoutiqueHeader from './components/BoutiqueHeader/BoutiqueHeader.jsx';
+import { ImageGallery } from './components/Three/ImageGallery.jsx';
 
 
 
@@ -34,7 +35,8 @@ function App() {
               <BoutiqueHeader/>
               <BodiosYakDown />
               <BrandDescription/>
-              <BodiosLayout />
+              <ImageGallery/>
+              {/* <BodiosLayout /> */}
               {/* <Video /> */}
               <Artisan/>
               {/* <Triple/> */}

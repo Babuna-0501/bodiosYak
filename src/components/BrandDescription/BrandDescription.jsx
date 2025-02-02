@@ -18,7 +18,7 @@ export function BrandDescription() {
             refined taste and uncompromising quality....
           </p>
         </section>
-        <SeeMoreButton className="mt-6 max-md:mt-4" />
+        {/* <SeeMoreButton className="mt-6 max-md:mt-4" /> */}
       </main>
     );
 }

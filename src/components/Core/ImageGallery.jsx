@@ -45,7 +45,7 @@ export function ImageGallery() {
         style={{ height: 1244 }}
       >
         {/* Title for Desktop */}
-        <div className="absolute inset-0 z-10 flex items-center justify-center text-center text-black text-[6vw] lg:text-[84px] sm:text-[50px] md:text-[65px]">
+        <div className="absolute inset-0 z-10 flex leading-[90px] items-center justify-center text-center text-black text-[6vw] lg:text-[84px] sm:text-[50px] md:text-[65px]">
           GIFTED BY NATURE, <br /> CREATED BY BODIOS
         </div>
 

@@ -7,7 +7,7 @@ const ImageComponent = () => {
     <section className="video-container">
       <video
         src={HeroVideo}
-        className="object-cover w-full aspect-[4/4] sm:aspect-[16/9]"
+        className="object-cover w-full aspect-[3/4] sm:aspect-[16/9]"
         loading="lazy"
         autoPlay
         muted

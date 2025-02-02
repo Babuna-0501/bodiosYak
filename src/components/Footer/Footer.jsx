@@ -37,7 +37,7 @@ const Footer = () => {
                   <div className="flex flex-col w-full max-md:mt-10 max-md:max-w-full">
                     <div className="flex flex-wrap gap-5 justify-between text-lg tracking-normal leading-none text-center text-black max-md:max-w-full">
                       <div className="flex flex-col">
-                        <h2 className="self-start">Follow us</h2>
+                        <h2 className="self-start font-githera">Follow us</h2>
                         <div className="flex w-full min-h-0" />
                       </div>
                       <div className="flex flex-col max-md:max-w-full">

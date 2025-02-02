@@ -86,10 +86,10 @@ const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="w-full bg-black bg-opacity-10 fixed mx-auto transition-colors hover:bg-[#EDEBE8] group xl:h-[80px] sm:h-[52px] z-20">
+    <header className="w-full bg-transparent fixed mx-auto transition-colors hover:bg-[#EDEBE8] group xl:h-[80px] sm:h-[52px] z-20">
 
       {/* Desktop Header */}
-      <div className="hidden md:flex justify-between items-center w-full mx-auto h-full">
+      <div className="hidden md:flex justify-around items-center w-full mx-auto h-full">
         {/* Left Links */}
         <nav className="flex space-x-6 font-light text-white text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
           <a
@@ -134,9 +134,9 @@ const Header = () => {
           <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black">
             Cart (0)
           </a>
-          <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black">
+          {/* <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black">
             Login
-          </a>
+          </a> */}
         </div>
       </div>
 
