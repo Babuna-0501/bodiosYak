@@ -22,7 +22,7 @@ const Header = () => {
   const handleMenuItemClick = () => {
     setDiscoverOpen(false);
     setBoutiqueOpen(false);
-    setMobileMenuOpen(false); // Close the burger menu
+    setMobileMenuOpen(false); 
   };
 
   const navigateToBodios = () => {
@@ -77,7 +77,6 @@ const Header = () => {
     }
 
     return () => {
-      // Cleanup: Reset overflow styles when component unmounts or menu closes
       document.body.style.overflow = '';
       document.documentElement.style.overflow = '';
       document.body.style.position = '';
@@ -86,15 +85,15 @@ const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="w-full bg-transparent fixed mx-auto transition-colors hover:bg-[#EDEBE8] group xl:h-[80px] sm:h-[52px] z-20">
+    <header className="w-full bg-transparent fixed mx-auto transition-colors  group xl:h-[80px] sm:h-[52px] z-20">
 
       {/* Desktop Header */}
-      <div className="hidden md:flex justify-around items-center w-full mx-auto h-full">
+      <div className="hidden md:flex justify-between hover:bg-[#EDEBE8] items-center w-full mx-auto h-auto min-h-[60px] md:min-h-[80px] px-4 md:px-6 lg:px-20">
         {/* Left Links */}
-        <nav className="flex space-x-6 font-light text-white text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
+        <nav className="flex space-x-4 md:space-x-6 font-light text-white text-[13px] sm:text-[11px] md:text-[13px] lg:text-[15px]">
           <a
             href="#"
-            className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black"
+            className="hover:bg-[#EDEBE8] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black"
             onMouseEnter={handleDiscoverHover}
             onMouseLeave={() => {}}
           >
@@ -102,7 +101,7 @@ const Header = () => {
           </a>
           <a
             href="#"
-            className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black"
+            className="hover:bg-[#EDEBE8] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black"
             onMouseEnter={handleBoutiqueHover}
             onMouseLeave={() => {}}
           >
@@ -113,7 +112,7 @@ const Header = () => {
         {/* Center Title */}
         <h1
           onClick={navigateToHome}
-          className="text-white text-[16px] sm:text-[20px] md:text-[22px] lg:text-[24px] font-semibold tracking-wide font-thin cursor-pointer group-hover:hidden"
+          className="text-white text-[16px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[22px] font-semibold tracking-wide font-thin cursor-pointer group-hover:hidden"
         >
           BODIOS YAK DOWN
         </h1>
@@ -122,23 +121,24 @@ const Header = () => {
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/b579b0acb0e565e43c6894a52d0889061ba28b8ee4f4cf227acb566a436cddbe?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1"
           alt="Center Title"
-          className="w-auto h-14 w-[200px] m-auto hidden group-hover:block cursor-pointer"
+          className="w-auto h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-[150px] sm:w-[160px] md:w-[180px] lg:w-[200px] m-auto hidden group-hover:block cursor-pointer"
           onClick={navigateToHome}
         />
 
         {/* Right Links */}
-        <div className="flex space-x-6 font-light text-white text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
-          <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black">
+        <div className="flex space-x-4 md:space-x-6 font-light text-white text-[13px] sm:text-[11px] md:text-[13px] lg:text-[15px]">
+          <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black">
             Search
           </a>
-          <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black">
+          <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black">
             Cart (0)
           </a>
-          {/* <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-4 py-2 rounded-md group-hover:text-black">
+          <a href="#" className="hover:bg-[#EDEBE8] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black">
             Login
-          </a> */}
+          </a>
         </div>
       </div>
+
 
     {/* Mobile Burger Menu */}
     <div className="md:hidden flex items-center px-4 py-2 w-[100vw] justify-between">
@@ -220,7 +220,7 @@ const Header = () => {
       {/* Discover Menu (Visible on hover) */}
       {discoverOpen && (
         <div
-          className="absolute top-20 left-0 w-full z-20 flex px-7"
+          className="absolute top-20 left-0 w-full z-20 flex px-12"
           style={{ background: '#EDEBE8' }}
           onMouseEnter={() => setDiscoverOpen(true)}
           onMouseLeave={() => setDiscoverOpen(false)}
