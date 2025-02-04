@@ -299,7 +299,7 @@ const Header = () => {
       {/* Boutique Menu (Visible on hover) */}
       {boutiqueOpen && (
         <div
-          className="absolute top-20 left-0 w-full z-20 flex px-7"
+          className="absolute top-20 left-0 w-full z-20 flex px-12"
           style={{ background: '#F7F4EF' }}
           onMouseEnter={() => setBoutiqueOpen(true)}
           onMouseLeave={() => setBoutiqueOpen(false)}

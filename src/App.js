@@ -5,7 +5,7 @@ import Header from './components/Header/Header.jsx';
 import BodiosYakDown from './components/BodiosYakDown.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import DetailBodios from './components/MenuDetail/DetailBodios.jsx';
-import About from './components/About/About.jsx';
+import About from './components/About/AboutUs.jsx';
 import YakDetail from './components/YaKDetail/YakDetail.jsx';
 import Social from './components/Social/Social.jsx';
 import ProductsPage from './components/Women/ProductsPage.jsx';
