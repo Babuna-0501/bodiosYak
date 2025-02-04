@@ -10,7 +10,7 @@ module.exports = {
         libreFranklin: ['Libre-Franklin-Light', 'sans-serif'], 
       },
       colors: {
-        customBg: '#EDEBE8',
+        customBg: '#F7F4EF',
       },
       lineHeight: {
         '24': '24px',

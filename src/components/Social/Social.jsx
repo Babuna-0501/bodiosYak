@@ -1,5 +1,5 @@
 // import SocialContent from "./SocialContent";
-import { GobiHistory } from "../Gobi/GobiHistory";
+import ContributionsTimeline from "../Yearly/ContributionsTimeline";
 
 function Social() {
   return (
@@ -13,7 +13,7 @@ function Social() {
         alt="Social responsibilty"
         className="object-contain self-stretch mt-16 w-full aspect-[1.78] max-md:mt-10 max-md:max-w-full" 
       />
-      <GobiHistory />
+      <ContributionsTimeline/>
     </div>
   );
 }

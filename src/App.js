@@ -2,10 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css';
 import Hero from './components/Hero.jsx';
 import Header from './components/Header/Header.jsx';
-import BodiosLayout from './components/Monthly/BodiosLayout.jsx';
 import BodiosYakDown from './components/BodiosYakDown.jsx';
-// import Video from './components/YakText/Video.jsx';
-// import MongolBg from './components/MongolBg.jsx';
 import Footer from './components/Footer/Footer.jsx';
 import DetailBodios from './components/MenuDetail/DetailBodios.jsx';
 import About from './components/About/About.jsx';
@@ -15,42 +12,39 @@ import ProductsPage from './components/Women/ProductsPage.jsx';
 import { MenCollection } from './components/Men/MenCollection.jsx';
 import { BrandStory } from './components/Core/BrandStory.jsx';
 import { Artisan } from './components/Artisan/Artisan.jsx';
-import Triple from './components/Triple/Triple.jsx';
 import { BrandDescription } from './components/BrandDescription/BrandDescription.jsx';
 import BoutiqueHeader from './components/BoutiqueHeader/BoutiqueHeader.jsx';
 import { ImageGallery } from './components/Three/ImageGallery.jsx';
-
-
+import HeaderWhite from './components/HeaderLing/HeaderWhite.jsx';
 
 function App() {
   return (
     <Router>
       <div className="App">
-        <Header />
         <Routes>
-          {/* Define routes */}
+          {/* Homepage Route with Header */}
           <Route path="/" element={
             <>
+              <Header />
               <Hero />
-              <BoutiqueHeader/>
+              <BoutiqueHeader />
               <BodiosYakDown />
-              <BrandDescription/>
-              <ImageGallery/>
-              {/* <BodiosLayout /> */}
-              {/* <Video /> */}
-              <Artisan/>
-              {/* <Triple/> */}
-              <BrandStory/>
-              {/* <MongolBg /> */}
+              <BrandDescription />
+              <ImageGallery />
+              <Artisan />
+              <BrandStory />
             </>
           } />
-          <Route path="/bodios" element={<DetailBodios />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/yak" element={<YakDetail/>} />
-          <Route path="/social" element={<Social/>} />
-          <Route path="/women" element={<ProductsPage/>} />
-          <Route path="/men" element={<MenCollection/>} />
+
+          {/* Other Pages with HeaderWhite */}
+          <Route path="/bodios" element={<><HeaderWhite /><DetailBodios /></>} />
+          <Route path="/about" element={<><HeaderWhite /><About /></>} />
+          <Route path="/yak" element={<><HeaderWhite /><YakDetail /></>} />
+          <Route path="/social" element={<><HeaderWhite /><Social /></>} />
+          <Route path="/women" element={<><HeaderWhite /><ProductsPage /></>} />
+          <Route path="/men" element={<><HeaderWhite /><MenCollection /></>} />
         </Routes>
+        
         <Footer />
       </div>
     </Router>

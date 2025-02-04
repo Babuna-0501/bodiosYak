@@ -3,7 +3,7 @@ import React, { useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import Bag from '../../assets/bag.png'
 
-const Header = () => {
+const HeaderWhite = () => {
   const [discoverOpen, setDiscoverOpen] = useState(false);
   const [boutiqueOpen, setBoutiqueOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
@@ -85,15 +85,15 @@ const Header = () => {
   }, [mobileMenuOpen]);
 
   return (
-    <header className="w-full bg-transparent fixed mx-auto transition-colors  group xl:h-[80px] sm:h-[52px] z-20">
+    <header className="w-full bg-[#F7F4EF] fixed mx-auto transition-colors  group xl:h-[80px] sm:h-[52px] z-20 shadow-[0px_1px_0px_rgba(0,0,0,0.15)]">
 
       {/* Desktop Header */}
-      <div className="hidden md:flex justify-between hover:bg-[#F7F4EF] items-center w-full mx-auto h-auto min-h-[60px] md:min-h-[80px] px-4 md:px-6 lg:px-20">
+      <div className="hidden md:flex justify-between items-center w-full mx-auto h-auto min-h-[60px] md:min-h-[80px] px-4 md:px-6 lg:px-20">
         {/* Left Links */}
         <nav className="flex space-x-4 md:space-x-6 font-light text-white text-[13px] sm:text-[11px] md:text-[13px] lg:text-[15px]">
           <a
             href="#"
-            className="hover:bg-[#F7F4EF] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black"
+            className="transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md text-black"
             onMouseEnter={handleDiscoverHover}
             onMouseLeave={() => {}}
           >
@@ -101,7 +101,7 @@ const Header = () => {
           </a>
           <a
             href="#"
-            className="hover:bg-[#F7F4EF] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black"
+            className="transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md text-black"
             onMouseEnter={handleBoutiqueHover}
             onMouseLeave={() => {}}
           >
@@ -109,28 +109,20 @@ const Header = () => {
           </a>
         </nav>
 
-        {/* Center Title */}
-        <h1
-          onClick={navigateToHome}
-          className="text-white text-[16px] sm:text-[16px] md:text-[18px] lg:text-[18px] xl:text-[22px] font-semibold tracking-wide font-thin cursor-pointer group-hover:hidden"
-        >
-          BODIOS YAK DOWN
-        </h1>
-
         {/* Center Title Image (on hover) */}
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/b579b0acb0e565e43c6894a52d0889061ba28b8ee4f4cf227acb566a436cddbe?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1"
           alt="Center Title"
-          className="w-auto h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-[150px] sm:w-[160px] md:w-[180px] lg:w-[200px] xl:w-[240px] m-auto hidden group-hover:block cursor-pointer"
+          className="w-auto h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-[150px] sm:w-[160px] md:w-[180px] lg:w-[200px] xl:w-[240px] m-auto cursor-pointer"
           onClick={navigateToHome}
         />
 
         {/* Right Links */}
         <div className="flex space-x-4 md:space-x-6 font-light text-white text-[13px] sm:text-[11px] md:text-[13px] lg:text-[15px]">
-          <a href="#" className="hover:bg-[#F7F4EF] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black">
+          <a href="#" className="transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md text-black">
             Search
           </a>
-          <a href="#" className="hover:bg-[#F7F4EF] transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md group-hover:text-black">
+          <a href="#" className="transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md text-black">
             Cart (0)
           </a>
         </div>
@@ -352,4 +344,4 @@ const Header = () => {
   );
 };
 
-export default Header;
+export default HeaderWhite;
