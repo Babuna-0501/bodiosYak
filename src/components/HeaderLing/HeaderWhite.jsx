@@ -88,7 +88,7 @@ const HeaderWhite = () => {
     <header className="w-full bg-[#F7F4EF] fixed mx-auto transition-colors  group xl:h-[80px] sm:h-[52px] z-20 shadow-[0px_1px_0px_rgba(0,0,0,0.15)]">
 
       {/* Desktop Header */}
-      <div className="hidden md:flex justify-between items-center w-full mx-auto h-auto min-h-[60px] md:min-h-[80px] px-4 md:px-6 lg:px-20">
+      <div className="hidden md:flex justify-between items-center w-full mx-auto h-auto px-4 md:px-6 lg:px-20">
         {/* Left Links */}
         <nav className="flex space-x-4 md:space-x-6 font-light text-white text-[13px] sm:text-[11px] md:text-[13px] lg:text-[15px]">
           <a
@@ -113,7 +113,7 @@ const HeaderWhite = () => {
         <img
           src="https://cdn.builder.io/api/v1/image/assets/TEMP/b579b0acb0e565e43c6894a52d0889061ba28b8ee4f4cf227acb566a436cddbe?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1"
           alt="Center Title"
-          className="w-auto h-8 sm:h-10 md:h-12 lg:h-14 xl:h-16 w-[150px] sm:w-[160px] md:w-[180px] lg:w-[200px] xl:w-[240px] m-auto cursor-pointer"
+          className="w-auto h-6 sm:h-8 md:h-10 lg:h-12 xl:h-14 w-[130px] sm:w-[140px] md:w-[160px] lg:w-[180px] xl:w-[210px] m-auto cursor-pointer md:mt-2 lg:mt-1 xl:mt-4"
           onClick={navigateToHome}
         />
 
