@@ -60,6 +60,11 @@ const HeaderWhite = () => {
     handleMenuItemClick();
   };
 
+  const navigateToJournal = () => {
+    navigate('/journal');
+    handleMenuItemClick();
+  };
+
   // Disable scrolling when mobile menu is open
   useEffect(() => {
     if (mobileMenuOpen) {
@@ -215,7 +220,7 @@ const HeaderWhite = () => {
           onMouseLeave={() => setDiscoverOpen(false)}
         >
           {/* Left Side - List Menu */}
-          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-6 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
+          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-8 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
             <a
               href="#"
               className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
@@ -247,9 +252,9 @@ const HeaderWhite = () => {
             <a
               href="#"
               className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
-              onClick={handleMenuItemClick}
+              onClick={navigateToJournal}
             >
-              Bodios People
+              Journal
             </a>
           </nav>
 
@@ -278,9 +283,9 @@ const HeaderWhite = () => {
                   <h3 className="mt-[10px] font-light">Social Responsibility</h3>
                 </div>
 
-                <div className="cursor-pointer" onClick={handleMenuItemClick}>
+                <div className="cursor-pointer" onClick={navigateToJournal}>
                   <div className="flex-shrink-0 w-[375px] h-[470px] lg:w-[375px] lg:h-[470px] md:w-[300px] md:h-[400px] sm:w-[250px] sm:h-[330px] bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets/TEMP/f1d63fded03a1907c9f7b643bfc930bd1d62dfe967494fcaf93a84677950f84f?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1)' }}></div>
-                  <h3 className="mt-[10px] font-light">Bodios People</h3>
+                  <h3 className="mt-[10px] font-light">Journal</h3>
                 </div>
               </div>
             </div>
@@ -297,7 +302,7 @@ const HeaderWhite = () => {
           onMouseLeave={() => setBoutiqueOpen(false)}
         >
           {/* Left Side - List Menu */}
-          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-6 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
+          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-8 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
             <a href="#" className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToProductWomen}>
               Women
             </a>

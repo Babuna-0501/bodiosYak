@@ -8,14 +8,14 @@ import DetailBodios from './components/MenuDetail/DetailBodios.jsx';
 import About from './components/About/AboutUs.jsx';
 import YakDetail from './components/YaKDetail/YakDetail.jsx';
 import Social from './components/Social/Social.jsx';
-import ProductsPage from './components/Women/ProductsPage.jsx';
-import { MenCollection } from './components/Men/MenCollection.jsx';
+import{CollectionPage} from './components/Collection/CollectionPage.jsx';
 import { BrandStory } from './components/Core/BrandStory.jsx';
 import { Artisan } from './components/Artisan/Artisan.jsx';
 import { BrandDescription } from './components/BrandDescription/BrandDescription.jsx';
 import BoutiqueHeader from './components/BoutiqueHeader/BoutiqueHeader.jsx';
 import { ImageGallery } from './components/Three/ImageGallery.jsx';
 import HeaderWhite from './components/HeaderLing/HeaderWhite.jsx';
+import JournalLayout from './components/Journal/JournalLayout.jsx';
 
 function App() {
   return (
@@ -38,11 +38,11 @@ function App() {
 
           {/* Other Pages with HeaderWhite */}
           <Route path="/bodios" element={<><HeaderWhite /><DetailBodios /></>} />
+          <Route path="/journal" element={<><HeaderWhite /><JournalLayout/></>} />
           <Route path="/about" element={<><HeaderWhite /><About /></>} />
           <Route path="/yak" element={<><HeaderWhite /><YakDetail /></>} />
           <Route path="/social" element={<><HeaderWhite /><Social /></>} />
-          <Route path="/women" element={<><HeaderWhite /><ProductsPage /></>} />
-          <Route path="/men" element={<><HeaderWhite /><MenCollection /></>} />
+          <Route path="/collection/:category" element={<CollectionPage />} />
         </Routes>
         
         <Footer />

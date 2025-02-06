@@ -223,7 +223,7 @@ const Header = () => {
           onMouseLeave={() => setDiscoverOpen(false)}
         >
           {/* Left Side - List Menu */}
-          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-6 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
+          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-8 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
             <a
               href="#"
               className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black"
@@ -305,7 +305,7 @@ const Header = () => {
           onMouseLeave={() => setBoutiqueOpen(false)}
         >
           {/* Left Side - List Menu */}
-          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-6 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
+          <nav className="flex flex-col items-start space-y-4 text-black w-1/5 p-8 text-[18px] lg:text-[18px] md:text-[16px] sm:text-[14px]">
             <a href="#" className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToProductWomen}>
               Women
             </a>
