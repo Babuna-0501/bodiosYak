@@ -51,17 +51,27 @@ const HeaderWhite = () => {
   };
 
   const navigateToProductWomen = () => {
-    navigate('/women');
+    navigate('/category/women');
     handleMenuItemClick();
   };
 
   const navigateToProductMen = () => {
-    navigate('/men');
+    navigate('/category/men');
     handleMenuItemClick();
   };
 
   const navigateToJournal = () => {
     navigate('/journal');
+    handleMenuItemClick();
+  };
+
+  const navigateToHomeProduct = () => {
+    navigate('/category/home');
+    handleMenuItemClick();
+  };
+
+  const navigateToAccessories = () => {
+    navigate('/category/accessories');
     handleMenuItemClick();
   };
 
@@ -309,10 +319,10 @@ const HeaderWhite = () => {
             <a href="#" className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToProductMen}>
               Men
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToYakDetail}>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToHomeProduct}>
               Home
             </a>
-            <a href="#" className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToSocial}>
+            <a href="#" className="hover:text-gray-400 hover:bg-[#F7F4EF] transition-colors px-4 py-2 rounded-md hover:underline hover:decoration-black" onClick={navigateToAccessories}>
               Accessories
             </a>
           </nav>
@@ -331,12 +341,12 @@ const HeaderWhite = () => {
                   <h3 className="mt-[10px] font-light">Men</h3>
                 </div>
 
-                <div className="cursor-pointer" onClick={navigateToYakDetail}>
+                <div className="cursor-pointer" onClick={navigateToHomeProduct}>
                   <div className="flex-shrink-0 w-[375px] h-[470px] lg:w-[375px] lg:h-[470px] md:w-[300px] md:h-[400px] sm:w-[250px] sm:h-[330px] bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets/TEMP/ef2946374d78dd117795d93c5afb3327d68f39f735697e142363cb5f7772f778?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1)' }}></div>
                   <h3 className="mt-[10px] font-light">Home</h3>
                 </div>
 
-                <div className="cursor-pointer" onClick={navigateToSocial}>
+                <div className="cursor-pointer" onClick={navigateToAccessories}>
                   <div className="flex-shrink-0 w-[375px] h-[470px] lg:w-[375px] lg:h-[470px] md:w-[300px] md:h-[400px] sm:w-[250px] sm:h-[330px] bg-cover bg-center" style={{ backgroundImage: 'url(https://cdn.builder.io/api/v1/image/assets/TEMP/4a18a0c33504f9791d6e77e10ce10d994b8ac54a99c459800b8dc232fd9983fa?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1)' }}></div>
                   <h3 className="mt-[10px] font-light">Accessories</h3>
                 </div>

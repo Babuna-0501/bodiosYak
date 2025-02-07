@@ -18,7 +18,7 @@ const galleryImages = [
 
 export function ImageGallery() {
   return (
-    <div className="grid grid-cols-3 gap-2 w-full max-md:grid-cols-2 max-sm:grid-cols-1">
+    <div className="grid grid-cols-3 gap-2 w-full max-md:grid-cols-2 max-sm:grid-cols-1 mb-[100px]">
       {galleryImages.map((image, index) => (
         <div key={index} className="relative w-full aspect-[4/5] group">
           {/* Original Image */}
