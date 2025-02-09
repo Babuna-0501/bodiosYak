@@ -105,7 +105,7 @@ const HeaderWhite = () => {
       {/* Desktop Header */}
       <div className="hidden md:flex justify-between items-center w-full mx-auto h-auto px-4 md:px-6 lg:px-20">
         {/* Left Links */}
-        <nav className="flex space-x-4 md:space-x-6 font-light text-white text-[13px] sm:text-[11px] md:text-[13px] lg:text-[15px]">
+        <nav className="flex space-x-4 md:space-x-6 font-light text-black text-[13px] sm:text-[11px] md:text-[13px] lg:text-[15px]">
           <a
             href="#"
             className="transition-colors px-3 md:px-4 py-1 md:py-2 rounded-md text-black"
@@ -146,7 +146,7 @@ const HeaderWhite = () => {
 
     {/* Mobile Burger Menu */}
     <div className="md:hidden flex items-center px-4 py-2 w-[100vw] justify-between">
-      <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-white">
+      <button onClick={() => setMobileMenuOpen(!mobileMenuOpen)} className="text-black">
         {/* Burger Icon when menu is closed */}
         {!mobileMenuOpen ? (
           <svg
@@ -183,7 +183,7 @@ const HeaderWhite = () => {
       </button>
 
       {/* Title with conditional color */}
-      <h1 className={`text-center ${mobileMenuOpen ? 'text-black' : 'text-white'}`}>BODIOS YAK DOWN</h1>
+      <h1 className={`text-center ${mobileMenuOpen ? 'text-black' : 'text-black'}`}>BODIOS YAK DOWN</h1>
 
       <img src={Bag} />
     </div>
@@ -215,6 +215,15 @@ const HeaderWhite = () => {
       </a>
       <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToProductMen(); handleMenuItemClick(); }}>
         Men
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToHomeProduct(); handleMenuItemClick(); }}>
+        Home Boutique
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToAccessories(); handleMenuItemClick(); }}>
+        Accessories
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToJournal(); handleMenuItemClick(); }}>
+        Journal
       </a>
     </nav>
   </div>

@@ -13,7 +13,7 @@ export function CallToAction() {
         }
       }}
     >
-      <div className="self-stretch my-auto">About us</div>
+      
       <img
         loading="lazy"
         src="https://cdn.builder.io/api/v1/image/assets/TEMP/43bca62bdeeaf43a211eceb7879812882bd489282edd6396617981eb714cb0d4?placeholderIfAbsent=true&apiKey=b9b4bb420cb64e36b6b71e99a06536e1"

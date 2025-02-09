@@ -23,7 +23,7 @@ function YakContent() {
   ];
 
   return (
-    <article className="font-libreFranklin font-light pt-0 text-lg leading-6 text-justify my-[84px] pl-2 pr-2 text-sm flex flex-col justify-center max-w-[1273px] sm:max-w-[600px] md:max-w-[900px] lg:max-w-[1273px] leading-[32px]">
+    <article className="font-libreFranklin font-light pt-0 text-lg leading-6 text-justify my-[84px] pl-4 pr-4 text-sm flex flex-col justify-center max-w-[1273px] sm:max-w-[600px] md:max-w-[900px] lg:max-w-[1273px] leading-[32px] sm:pl-4 sm:pr-4 md:pl-6 md:pr-6">
       {paragraphs.map((paragraph, index) => (
         <p
           key={index}

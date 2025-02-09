@@ -15,13 +15,18 @@ export function Artisan() {
           muted
         />
 
-        {/* Content Overlay */}
+        {/* Content Overlay - Title + Description on Desktop */}
         <div className="relative z-10 flex justify-center items-center w-full h-full px-20 max-md:px-5">
           <ArtisanContent />
         </div>
 
-        {/* Optional: Add a Background Overlay for Better Text Visibility */}
+        {/* Background Overlay for Visibility */}
         <div className="absolute top-0 left-0 w-full h-full bg-black/40"></div>
+      </div>
+
+      {/* Description Below Video on Mobile Only */}
+      <div className="md:hidden px-5 mt-5">
+        <ArtisanContent mobileOnly />
       </div>
     </div>
   );

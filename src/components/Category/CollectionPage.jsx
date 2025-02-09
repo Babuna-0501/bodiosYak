@@ -20,22 +20,27 @@ const categoryData = {
       { title: "Women's Dress", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/dad397fab719d7a9d53aaaab13ec6418c3b0e916fb0edc09f184cdc8ec79c7f7?apiKey=9804d3a088fa478e8672485264720a14&", price: 80 },
       { title: "Women's Shoes", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/dad397fab719d7a9d53aaaab13ec6418c3b0e916fb0edc09f184cdc8ec79c7f7?apiKey=9804d3a088fa478e8672485264720a14&", price: 60 },
       { title: "Women's Shoes", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/dad397fab719d7a9d53aaaab13ec6418c3b0e916fb0edc09f184cdc8ec79c7f7?apiKey=9804d3a088fa478e8672485264720a14&", price: 60 },
+      { title: "Women's Sweater", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/c5b9342df14c1ddcae1aabd1daca11bbaac657107b53c4917685886c8ce7db29?apiKey=9804d3a088fa478e8672485264720a14&",price: 850 }
     ],
   },
   home: {
     title: "Home",
     description: "Furnish your home with quality furniture and decor.",
     products: [
-      { title: "Sofa", image: "/images/sofa.jpg", price: 500 },
-      { title: "Table", image: "/images/table.jpg", price: 150 },
+      { title: "Women's Dress", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/da5823ec57a034acab86bbc30f3e39bc2177fd01cf58eedb4245939daa29eb9d?apiKey=9804d3a088fa478e8672485264720a14&", price: 80 },
+      { title: "Women's Shoes", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/dad397fab719d7a9d53aaaab13ec6418c3b0e916fb0edc09f184cdc8ec79c7f7?apiKey=9804d3a088fa478e8672485264720a14&", price: 60 },
+      { title: "Women's Shoes", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/dad397fab719d7a9d53aaaab13ec6418c3b0e916fb0edc09f184cdc8ec79c7f7?apiKey=9804d3a088fa478e8672485264720a14&", price: 60 },
+      { title: "Women's Sweater", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/c5b9342df14c1ddcae1aabd1daca11bbaac657107b53c4917685886c8ce7db29?apiKey=9804d3a088fa478e8672485264720a14&",price: 850 }
     ],
   },
   accessories: {
     title: "Accessories",
     description: "Complete your look with stylish accessories.",
     products: [
-      { title: "Watch", image: "/images/watch.jpg", price: 150 },
-      { title: "Sunglasses", image: "/images/sunglasses.jpg", price: 50 },
+      { title: "Women's Dress", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/da5823ec57a034acab86bbc30f3e39bc2177fd01cf58eedb4245939daa29eb9d?apiKey=9804d3a088fa478e8672485264720a14&", price: 80 },
+      { title: "Women's Shoes", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/dad397fab719d7a9d53aaaab13ec6418c3b0e916fb0edc09f184cdc8ec79c7f7?apiKey=9804d3a088fa478e8672485264720a14&", price: 60 },
+      { title: "Women's Shoes", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/dad397fab719d7a9d53aaaab13ec6418c3b0e916fb0edc09f184cdc8ec79c7f7?apiKey=9804d3a088fa478e8672485264720a14&", price: 60 },
+      { title: "Women's Sweater", image: "https://cdn.builder.io/api/v1/image/assets/9804d3a088fa478e8672485264720a14/c5b9342df14c1ddcae1aabd1daca11bbaac657107b53c4917685886c8ce7db29?apiKey=9804d3a088fa478e8672485264720a14&",price: 850 }
     ],
   },
 };

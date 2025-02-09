@@ -20,7 +20,12 @@ export function ImageGallery() {
   return (
     <div className="grid grid-cols-3 gap-2 w-full max-md:grid-cols-2 max-sm:grid-cols-1 mb-[100px]">
       {galleryImages.map((image, index) => (
-        <div key={index} className="relative w-full aspect-[4/5] group">
+        <div
+          key={index}
+          className={`relative w-full aspect-[4/5] group ${
+            index === 1 ? "max-sm:p-20" : ""
+          }`}
+        >
           {/* Original Image */}
           <GalleryImage
             src={image.src}
@@ -30,7 +35,9 @@ export function ImageGallery() {
           {/* Hover Image */}
           <GalleryImage
             src={image.hoverSrc}
-            className="object-cover w-full h-full absolute top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-pointer"
+            className={`object-cover w-full h-full absolute top-0 left-0 opacity-0 transition-opacity duration-300 group-hover:opacity-100 cursor-pointer ${
+              index === 1 ? "max-sm:p-20" : ""
+            }`}
             alt={`Gallery hover image ${index + 1}`}
           />
         </div>
@@ -38,3 +45,5 @@ export function ImageGallery() {
     </div>
   );
 }
+
+

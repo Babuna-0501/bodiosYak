@@ -7,6 +7,7 @@ const Header = () => {
   const [discoverOpen, setDiscoverOpen] = useState(false);
   const [boutiqueOpen, setBoutiqueOpen] = useState(false);
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false); 
+  const [menuHovered, setMenuHovered] = useState(false); // Track hover state
   const navigate = useNavigate();
 
   const handleDiscoverHover = () => {
@@ -223,6 +224,15 @@ const Header = () => {
       </a>
       <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToProductMen(); handleMenuItemClick(); }}>
         Men
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToHomeProduct(); handleMenuItemClick(); }}>
+        Home Boutique
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToAccessories(); handleMenuItemClick(); }}>
+        Accessories
+      </a>
+      <a href="#" className="hover:text-gray-400 transition-colors px-4 py-2 rounded-md" onClick={() => { navigateToJournal(); handleMenuItemClick(); }}>
+        Journal
       </a>
     </nav>
   </div>
